@@ -172,30 +172,34 @@ export default function Home() {
                         <div className={"container in-row justify-start"}>
                             <h2 className={"font-face-florida title-name"}> Rebreaker</h2>
                             <h2 className={"projet-tag"} style={{backgroundColor: "lightcoral"}}> C++ </h2>
+                            <h2 className={"projet-tag"} style={{backgroundColor: "lightsalmon"}}> Game </h2>
                             <h2 className={"projet-tag"} style={{backgroundColor: "lightpink"}}> School </h2>
                             <h2 className={"projet-tag"} style={{backgroundColor: "lightcyan"}}> 2 Week </h2>
                         </div>
 
                         <div className={"container in-row justify-start"}>
                             <iframe ref={ref} className={"project-image"} width="560" height="315"
-                                    src="https://www.youtube.com/embed/NSxrJB3lpgI?si=dv7hXxQDChQ8zmGi?&autoplay=1&volume=0.1"
+                                    src="https://www.youtube.com/embed/NSxrJB3lpgI?si=dv7hXxQDChQ8zmGi?&autoplay=1&mute=1"
                                     title="YouTube video player" frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
                             </iframe>
                             <p className={"profile-separator"}></p>
-                            <p className={"project-desc"}> La couleur </p>
+                            <p className={"project-desc"}> Mes objectifs de base </p>
                             <p className={"profile-separator"}></p>
-                            <p className={"project-desc"}>&</p>
+                            <p className={"project-desc"}>Petites descriptions de la finalité du projet et de
+                                l'apprentissage</p>
                         </div>
 
                     </div>
 
                     <div className={"card"}>
 
-                        <div className={"container in-row justify-start"}>
-                            <h2 className={"font-face-florida title-name"}> Rebreaker</h2>
-                            <h2 className={"projet-tag"} style={{backgroundColor: "lightcoral"}}> C++ </h2>
+                    <div className={"container in-row justify-start"}>
+                            <h2 className={"font-face-florida title-name"}> Endless Terrain Generator</h2>
+                            <h2 className={"projet-tag"} style={{backgroundColor: "lightcoral"}}> Unity </h2>
+                            <h2 className={"projet-tag"} style={{backgroundColor: "lightsalmon"}}> Project </h2>
+                            <h2 className={"projet-tag"} style={{backgroundColor: "lightpink"}}> Personal </h2>
                             <h2 className={"projet-tag"} style={{backgroundColor: "lightcyan"}}> 1 Week </h2>
                         </div>
 
@@ -207,9 +211,9 @@ export default function Home() {
                                     referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
                             </iframe>
                             <p className={"profile-separator"}></p>
-                            <p className={"project-desc"}> La couleur </p>
+                            <p className={"project-desc"}> Mes objectifs de base </p>
                             <p className={"profile-separator"}></p>
-                            <p className={"project-desc"}>&</p>
+                            <p className={"project-desc"}>Petites descriptions de la finalité du projet et de l'apprentissage</p>
                         </div>
 
                     </div>
