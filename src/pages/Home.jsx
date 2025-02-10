@@ -73,17 +73,17 @@ export default function Home() {
 
                                 <a href="https://github.com/MomoCrash" target={"_blank"}>
                                     <div className={"profile-social"}
-                                         style={{backgroundImage: "url(" + "../../public/github.png" + ")"}}></div>
+                                         style={{backgroundImage: "url(" + "public/github.png" + ")"}}></div>
                                 </a>
 
                                 <a href="https://www.linkedin.com/in/ethan-gilotin-788015293/" target={"_blank"}>
                                     <div className={"profile-social"}
-                                         style={{backgroundImage: "url(" + "../../public/linkedin.png" + ")"}}></div>
+                                         style={{backgroundImage: "url(" + "public/linkedin.png" + ")"}}></div>
                                 </a>
 
                                 <a href="https://momocrash.itch.io/" target={"_blank"}>
                                     <div className={"profile-social"}
-                                         style={{backgroundImage: "url(" + "../../public/itch-io.png" + ")"}}></div>
+                                         style={{backgroundImage: "url(" + "public/itch-io.png" + ")"}}></div>
                                 </a>
                             </div>
                         </div>
@@ -98,10 +98,9 @@ export default function Home() {
                         </div>
                     </a>
 
-                </div>
-
-
-                <div className={"container"}>
+                    {
+                        /*</div>
+                    <div className={"container"}>
 
                     <div className={"big-card"}>
 
@@ -141,7 +140,8 @@ export default function Home() {
                             viverra est sed semper iaculis. Sed vehicula quam a auctor lacinia. Mauris mattis dictum
                             feugiat.
                         </p>
-                    </div>
+                    </div>*/
+                }
 
                 </div>
 
@@ -172,6 +172,7 @@ export default function Home() {
                         <div className={"container in-row justify-start"}>
                             <h2 className={"font-face-florida title-name"}> Rebreaker</h2>
                             <h2 className={"projet-tag"} style={{backgroundColor: "lightcoral"}}> C++ </h2>
+                            <h2 className={"projet-tag"} style={{backgroundColor: "lightpink"}}> School </h2>
                             <h2 className={"projet-tag"} style={{backgroundColor: "lightcyan"}}> 2 Week </h2>
                         </div>
 
@@ -199,7 +200,12 @@ export default function Home() {
                         </div>
 
                         <div className={"container in-row justify-start"}>
-                            <p className={"project-image"}></p>
+                            <iframe ref={ref} className={"project-image"} width="560" height="315"
+                                    src="https://www.youtube.com/embed/7ZslUnYMS2E?si=dv7hXxQDChQ8zmGi?&autoplay=1&volume=0.1"
+                                    title="YouTube video player" frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
+                            </iframe>
                             <p className={"profile-separator"}></p>
                             <p className={"project-desc"}> La couleur </p>
                             <p className={"profile-separator"}></p>
