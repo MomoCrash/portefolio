@@ -1,0 +1,10 @@
+.background {
+    background-color: color-mix(in srgb, #536DFE 5%, #121212 95%);
+    background-repeat: round;
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+}

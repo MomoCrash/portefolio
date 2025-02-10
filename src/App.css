@@ -1,0 +1,44 @@
+#root {
+
+  scroll-behavior: smooth;
+  position: absolute;
+
+  width: 100%;
+
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.font-face-alte {
+  font-family: "AlteHaas", serif;
+  font-weight: 900;
+  font-size: 30px;
+  color: white;
+}
+
+.font-face-florida {
+  font-family: "FloridaVibe", serif;
+  font-weight: 900;
+  font-size: 50px;
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #adbbda;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3D52A0;
+}

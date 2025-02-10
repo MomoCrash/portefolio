@@ -1,0 +1,46 @@
+{
+  "hash": "05f21e1c",
+  "configHash": "995db0a3",
+  "lockfileHash": "99f389e8",
+  "browserHash": "ae2a8ba4",
+  "optimized": {
+    "react": {
+      "src": "../../node_modules/react/index.js",
+      "file": "react.js",
+      "fileHash": "dd204e48",
+      "needsInterop": true
+    },
+    "react-dom/client": {
+      "src": "../../node_modules/react-dom/client.js",
+      "file": "react-dom_client.js",
+      "fileHash": "6c4d611f",
+      "needsInterop": true
+    },
+    "react-router-dom": {
+      "src": "../../node_modules/react-router-dom/dist/index.js",
+      "file": "react-router-dom.js",
+      "fileHash": "898e081f",
+      "needsInterop": false
+    },
+    "react-unity-webgl": {
+      "src": "../../node_modules/react-unity-webgl/distribution/exports.js",
+      "file": "react-unity-webgl.js",
+      "fileHash": "9022f66f",
+      "needsInterop": true
+    },
+    "react-intersection-observer": {
+      "src": "../../node_modules/react-intersection-observer/dist/index.mjs",
+      "file": "react-intersection-observer.js",
+      "fileHash": "bc34f308",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-QPG7G3M7": {
+      "file": "chunk-QPG7G3M7.js"
+    },
+    "chunk-UTEJFLXC": {
+      "file": "chunk-UTEJFLXC.js"
+    }
+  }
+}

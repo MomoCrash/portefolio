@@ -1,0 +1,340 @@
+.title-name {
+    position: relative;
+    font-size: 50px;
+    text-align: left;
+    padding-left: 20px;
+    margin-right: 20px;
+}
+
+.sub-name {
+    position: relative;
+    font-size: 50px;
+    width: 1000px;
+    text-align: center;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.profile-social {
+    margin-top: 20px;
+    background-position: -1px -2px;
+    background-size: 53px;
+    background-repeat: no-repeat;
+    background-color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+
+    transition: ease-in-out 0.2s;
+}
+
+.profile-social:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.logo-profile {
+    background-color: #7f8a5e;
+    background-image: url("../../public/EthanGilotin.jpg");
+    background-position: -50px -100px;
+    background-size: 400px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    margin: 0 170px;
+}
+
+.profile-separator {
+    background-color: white;
+    border-radius: 10px;
+    width: 5px;
+    height: 150px;
+    margin: auto 0;
+}
+
+.profile-text-container {
+    display: flex;
+    width: 300px;
+    height: 200px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-name {
+    font-size: 50px;
+    width: 400px;
+    text-align: left;
+}
+
+.profile-description {
+    font-family: CaviarDreams;
+    font-size: 30px;
+    width: 500px;
+    text-align:left;
+    color: whitesmoke;
+}
+
+.spaced {
+    margin: 20px auto;
+}
+
+.full-w {
+    width: 100% !important;
+    border-radius: 20px 20px !important;
+}
+
+.full-h {
+    height: 90vh !important;
+    border-radius: 20px 20px !important;
+}
+
+.big-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    width: 100%;
+    margin: 30px auto;
+    text-align: center;
+    border-radius: 20px 20px !important;
+    box-shadow: 3px 3px 1px 1px #121212;
+    background-color: color-mix(in srgb, #536DFE 15%, #121212 85%);
+
+    transition: all .2s ease;
+}
+
+.in-row {
+    flex-direction: row;
+}
+
+.in-column {
+    flex-direction: column;
+}
+
+.justify-start {
+    justify-content: start;
+}
+
+.card {
+
+    width: 100%;
+    margin: 20px 0px;
+    padding-bottom: 15px;
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 20px 20px;
+    box-shadow: 3px 3px 1px 1px #121212;
+    background-color: color-mix(in srgb, #536DFE 15%, #121212 85%);
+
+    transition: all .2s ease;
+
+}
+
+.card:hover,.big-card:hover {
+    box-shadow: 3px 3px 1px 3px #121212;
+    background-color: color-mix(in srgb, #536DFE 20%, #121212 80%);
+}
+
+.project-desc {
+    font-family: CaviarDreams;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.project-image {
+    font-size: 20px;
+    margin: auto 20px;
+    background-color: red;
+    border-radius: 10px 10px;
+    width: 400px;
+    height: 150px;
+}
+
+.projet-tag {
+    font-family: CaviarDreams;
+    border-radius: 10px 10px;
+    margin: auto 0 auto 5px;
+    font-size: x-large;
+    height: 30px;
+    padding: 0 10px;
+}
+
+.small-text {
+    font-size: 20px !important;
+}
+
+.game-preview {
+
+    width: 99%;
+    justify-self: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px #121212;
+
+}
+
+.game-preview-card {
+
+    width: 100%;
+    height: 50%;
+    margin: 20px 0;
+    text-align: center;
+    border-radius: 2%;
+    box-shadow: 3px 3px 1px 1px #121212;
+    background-color: color-mix(in srgb, #536DFE 15%, #121212 85%);
+
+    transition: all .2s ease;
+
+}
+
+.inline-container {
+    position: relative;
+    display: flex;
+    margin: 10px;
+
+    justify-content: space-evenly;
+    font-family: "Caviar Dreams";
+    font-size: 20px;
+}
+
+.inline-container button {
+    width: 150px;
+    height: 55px;
+}
+
+.fullscreen {
+    width: 55px !important;
+    height: 55px !important;
+    background-color: transparent;
+    border-radius: 5px 5px;
+    background-image: url("../../public/full-screen.png");
+    background-size: 54px;
+    background-repeat: no-repeat;
+}
+
+.inline-container p {
+    font-size: 2rem;
+}
+
+.scrolldown {
+    --color: white;
+    --sizeX: 30px;
+    --sizeY: 50px;
+    position: absolute;
+    width: var(--sizeX);
+    height: var(--sizeY);
+    border: calc(var(--sizeX) / 10) solid var(--color);
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    cursor: pointer;
+
+    bottom: 15px;
+    right: 20px;
+}
+
+.scrolldown::before {
+    content: "";
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: var(--color);
+    border-radius: 100%;
+    animation: scrolldown-anim 2s infinite;
+    box-sizing: border-box;
+    box-shadow: 0px -5px 3px 1px #2a547066;
+}
+
+@media (max-width: 1000px) {
+    .card {
+        align-items: center;
+        position: relative;
+        top: 200px;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 400px;
+        width: 400px;
+    }
+    a:hover {
+        color: color-mix(in srgb, #536DFE 10%, #121212 90%);
+    }
+    button {
+        background-color: #f9f9f9;
+    }
+
+    .chevrons {
+        padding: 6px 0 0 0;
+        margin-left: -3px;
+        margin-top: 48px;
+        width: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .chevrondown {
+        margin-top: -6px;
+        position: relative;
+        border: solid var(--color);
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
+    }
+
+    .chevrondown:nth-child(odd) {
+        animation: pulse54012 500ms ease infinite alternate;
+    }
+
+    .chevrondown:nth-child(even) {
+        animation: pulse54012 500ms ease infinite alternate 250ms;
+    }
+}
+
+@keyframes scrolldown-anim {
+    0% {
+        opacity: 0;
+        height: 6px;
+    }
+
+    40% {
+        opacity: 1;
+        height: 10px;
+    }
+
+    80% {
+        transform: translate(0, 20px);
+        height: 10px;
+        opacity: 0;
+    }
+
+    100% {
+        height: 3px;
+        opacity: 0;
+    }
+}
+
+@keyframes pulse54012 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+}
+
