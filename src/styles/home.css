@@ -90,7 +90,7 @@
 }
 
 .full-h {
-    height: 90vh !important;
+    height: 93vh !important;
     border-radius: 20px 20px !important;
 }
 
@@ -148,13 +148,51 @@
     color: whitesmoke;
 }
 
+.project-objectives {
+    font-family: CaviarDreams;
+    font-size: 20px;
+    margin: 0 10px;
+    color: whitesmoke;
+}
+
+.project-bullet {
+    display: flex;
+    font-family: CaviarDreams;
+    background-color: white;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.plain {
+    background-color: color-mix(in srgb, #536DFE 15%, #121212 85%);
+    width:18px;
+    height: 18px;
+    margin: auto auto;
+}
+
 .project-image {
+    display: flex;
     font-size: 20px;
     margin: auto 20px;
-    background-color: red;
+    background-color: rgba(100, 100, 100, 20%);
     border-radius: 10px 10px;
     width: 400px;
-    height: 150px;
+    height: 200px;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.no-image {
+    background-color: #121212;
+    color: white;
+    width: 120px;
+    height: 30px;
+    text-align: center;
+
+    justify-content: center;
 }
 
 .projet-tag {
@@ -164,6 +202,13 @@
     font-size: x-large;
     height: 30px;
     padding: 0 10px;
+}
+
+.projet-skills {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    justify-content: center;
 }
 
 .small-text {
@@ -197,26 +242,43 @@
 .inline-container {
     position: relative;
     display: flex;
-    margin: 10px;
+
+    margin-top: 10px;
 
     justify-content: space-evenly;
     font-family: "Caviar Dreams";
     font-size: 20px;
+    height: 70px;
+
 }
 
-.inline-container button {
+.inline-container .previous {
+
+    position: absolute;
+    left: 50px;
     width: 150px;
     height: 55px;
+
+}
+.inline-container .next {
+
+    position: absolute;
+    right: 150px;
+    width: 150px;
+    height: 55px;
+
 }
 
 .fullscreen {
+    position: absolute;
     width: 55px !important;
     height: 55px !important;
     background-color: transparent;
-    border-radius: 5px 5px;
     background-image: url("../../public/full-screen.png");
     background-size: 54px;
     background-repeat: no-repeat;
+
+    right: 50px;
 }
 
 .inline-container p {
@@ -339,3 +401,99 @@
     }
 }
 
+/* From Uiverse.io by cssbuttons-io */
+button {
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+}
+
+button.learn-more {
+
+    left: 85%;
+    top: 80%;
+
+    width: 11rem;
+    height: 1.5rem;
+
+    background-color: transparent;
+}
+
+button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    display: flex;
+    margin: -16px -12px;
+    width: 2rem;
+    height: 2rem;
+    background: color-mix(in srgb, #ffffff 15%, #121212 90%);
+    border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.625rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0 0;
+    margin: -1px 0 0 1.2rem;
+    color: whitesmoke;
+    font-weight: 700;
+    line-height: 1.6;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1em;
+    border: none;
+}
+
+button:hover .circle {
+    width: 120%;
+    border: none;
+}
+
+button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+    border: none;
+}
+
+button:hover .button-text {
+    color: #fff;
+    border: none;
+}

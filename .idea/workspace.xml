@@ -4,21 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="24270314-330d-4147-a136-bcaffc664c2e" name="Changes" comment="">
+    <list default="true" id="dc994f15-775f-4214-8532-fe2618d454a6" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Home.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/navbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="CSS File" />
-        <option value="JSX File" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -26,48 +24,31 @@
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
-  <component name="ProjectId" id="2keQen4m8o5Sn0Lxfha3p9opxtK" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2srMWhzYMaFCM7nYM89SzDGMkwD" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/momo1/Documents/@DevPerso/portefolio/public",
-    "list.type.of.created.stylesheet": "CSS",
+    "last_opened_file_path": "C:/Users/momo1/Documents/@DevPerso/portefolio",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "npm.npm dev.executor": "Run",
+    "npm.dev.executor": "Run",
     "settings.editor.selected.configurable": "AtomSettingsConfigurable",
     "ts.external.directory.path": "C:\\Users\\momo1\\AppData\\Local\\Programs\\IntelliJ IDEA Ultimate\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\momo1\Documents\@DevPerso\portefolio\public" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\momo1\Documents\@DevPerso\portefolio\public" />
-      <recent name="C:\Users\momo1\Documents\@DevPerso\portefolio\public\nichii" />
-      <recent name="C:\Users\momo1\Documents\@DevPerso\portefolio\src\fonts" />
-      <recent name="C:\Users\momo1\Documents\@DevPerso\portefolio\public\horizon" />
-      <recent name="C:\Users\momo1\Documents\@DevPerso\portefolio\src\assets" />
-    </key>
-  </component>
   <component name="RunManager">
-    <configuration name="npm dev" type="js.build_tools.npm">
+    <configuration name="dev" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
@@ -89,43 +70,17 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="24270314-330d-4147-a136-bcaffc664c2e" name="Changes" comment="" />
-      <created>1723641659093</created>
+      <changelist id="dc994f15-775f-4214-8532-fe2618d454a6" name="Changes" comment="" />
+      <created>1739209273654</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1723641659093</updated>
-      <workItem from="1723641660198" duration="11974000" />
-      <workItem from="1723733274307" duration="10301000" />
-      <workItem from="1724151946594" duration="10333000" />
-      <workItem from="1724201190362" duration="856000" />
-      <workItem from="1724345322538" duration="6193000" />
-      <workItem from="1724682453676" duration="5826000" />
-      <workItem from="1725441326125" duration="104000" />
-      <workItem from="1725444831722" duration="252000" />
-      <workItem from="1725467183570" duration="1059000" />
-      <workItem from="1725538185174" duration="46000" />
-      <workItem from="1727855993357" duration="9697000" />
-      <workItem from="1727865999221" duration="2682000" />
-      <workItem from="1727879979992" duration="10322000" />
-      <workItem from="1728134206492" duration="601000" />
-      <workItem from="1728137799086" duration="142000" />
-      <workItem from="1728137950030" duration="610000" />
-      <workItem from="1728288501046" duration="145000" />
-      <workItem from="1730471262738" duration="6361000" />
-      <workItem from="1730645976554" duration="8000" />
-      <workItem from="1731058667864" duration="5593000" />
-      <workItem from="1731331738995" duration="1213000" />
-      <workItem from="1738579456114" duration="3111000" />
-      <workItem from="1738661284587" duration="5369000" />
-      <workItem from="1739121620841" duration="12237000" />
-      <workItem from="1739177956429" duration="2133000" />
+      <updated>1739209273654</updated>
+      <workItem from="1739209274751" duration="5700000" />
+      <workItem from="1739261482614" duration="9364000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

@@ -53,7 +53,23 @@ export default function Home() {
         unityProviders[localStorage.getItem("currentGame") ? parseInt(localStorage.getItem("currentGame")) : 0].requestFullscreen(true);
     }
 
-    const { ref, inView, entry } = useInView({
+    function SkillPoint(string, number) {
+        return (<>
+                <p className={"project-objectives"}> {string} </p>
+                <ul className={"container in-row"}>
+                    {[...Array(number)].map((x, i) =>
+                        <li key={i} className={"project-bullet"}></li>
+                    )}
+                    {[...Array(5-number)].map((x, i) =>
+                        <li key={i} className={"project-bullet"}>
+                            <span className={"project-bullet plain"}></span>
+                        </li>
+                    )}
+                </ul>
+            </>);
+    }
+
+    const {ref, inView, entry} = useInView({
         threshold: 0.9,
     });
 
@@ -149,15 +165,16 @@ export default function Home() {
 
                     <div className={"game-preview-card"}>
 
-                        <h2 className={"font-face-florida title-name"}> mes jeux signatures </h2>
+                        <h2 className={"font-face-florida title-name"}> mes jeux </h2>
                         {projectDescription[localStorage.getItem("currentGame") ? parseInt(localStorage.getItem("currentGame")) : 0]}
                         <Unity className={"game-preview"}
                                unityProvider={unityProviders[localStorage.getItem("currentGame") ? parseInt(localStorage.getItem("currentGame")) : 0].unityProvider}>
                         </Unity>
 
                         <div className={"inline-container"}>
-                            <button onClick={PreviousGame}> Précédent</button>
-                            <button onClick={NextGame}> Suivant</button>
+                            <button className="previous" onClick={PreviousGame}> Précédent</button>
+                            <p className="font-face-florida"> just play it now </p>
+                            <button className="next" onClick={NextGame}> Suivant</button>
                             <button className="fullscreen" onClick={Fullscreen}></button>
                         </div>
 
@@ -178,24 +195,70 @@ export default function Home() {
                         </div>
 
                         <div className={"container in-row justify-start"}>
-                            <iframe ref={ref} className={"project-image"} width="560" height="315"
+                            <iframe ref={ref} className={"project-image"}
                                     src="https://www.youtube.com/embed/NSxrJB3lpgI?si=dv7hXxQDChQ8zmGi?&autoplay=1&mute=1&loop=1"
                                     title="YouTube video player" frameBorder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
                             </iframe>
                             <p className={"profile-separator"}></p>
-                            <p className={"project-desc"}> Mes objectifs de base </p>
+                            <div className={"projet-skills in-row"}>
+                                {SkillPoint("Game Design", 5)}
+                                {SkillPoint("Juiciness", 5)}
+                                {SkillPoint("Game Engine", 4)}
+                            </div>
                             <p className={"profile-separator"}></p>
-                            <p className={"project-desc"}>Petites descriptions de la finalité du projet et de
-                                l'apprentissage</p>
+                            <p className={"project-desc"}> Petites descriptions de la finalité du projet et de
+                                l'apprentissage </p>
+
+                            <button className="learn-more">
+                                    <span className="circle" aria-hidden="true">
+                                      <span className="icon arrow"></span></span>
+                                <span className="font-face-florida button-text">Learn More</span>
+                            </button>
                         </div>
 
                     </div>
 
                     <div className={"card"}>
 
-                    <div className={"container in-row justify-start"}>
+                        <div className={"container in-row justify-start"}>
+                            <h2 className={"font-face-florida title-name"}> Multiplayer </h2>
+                            <h2 className={"projet-tag"} style={{backgroundColor: "lightcoral"}}> C++ </h2>
+                            <h2 className={"projet-tag"} style={{backgroundColor: "lightsalmon"}}> Networking </h2>
+                            <h2 className={"projet-tag"} style={{backgroundColor: "lightpink"}}> School </h2>
+                            <h2 className={"projet-tag"} style={{backgroundColor: "lightcyan"}}> 2 Week </h2>
+                        </div>
+
+                        <div className={"container in-row justify-start"}>
+                            <iframe ref={ref} className={"project-image"}
+                                    src="https://www.youtube.com/embed/vmt-WsIYRVI?si=GjEhPNZ6n4rLRwzD?&autoplay=1&mute=1&loop=1"
+                                    title="YouTube video player" frameBorder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
+                            </iframe>
+                            <p className={"profile-separator"}></p>
+                            <div className={"projet-skills in-row"}>
+                                {SkillPoint("Encapsulation", 5)}
+                                {SkillPoint("API Usage", 5)}
+                                {SkillPoint("Client–Server", 4)}
+                            </div>
+                            <p className={"profile-separator"}></p>
+                            <p className={"project-desc"}>Petites descriptions de la finalité du projet et de
+                                l'apprentissage </p>
+                        </div>
+
+                        <button className="learn-more">
+                                    <span className="circle" aria-hidden="true">
+                                      <span className="icon arrow"></span></span>
+                            <span className="font-face-florida button-text">Learn More</span>
+                        </button>
+
+                    </div>
+
+                    <div className={"card"}>
+
+                        <div className={"container in-row justify-start"}>
                             <h2 className={"font-face-florida title-name"}> Endless Terrain Generator</h2>
                             <h2 className={"projet-tag"} style={{backgroundColor: "lightcoral"}}> Unity </h2>
                             <h2 className={"projet-tag"} style={{backgroundColor: "lightsalmon"}}> Project </h2>
@@ -211,9 +274,52 @@ export default function Home() {
                                     referrerPolicy="strict-origin-when-cross-origin" allowFullScreen>
                             </iframe>
                             <p className={"profile-separator"}></p>
-                            <p className={"project-desc"}> Mes objectifs de base </p>
+                            <div className={"projet-skills in-row"}>
+                                {SkillPoint("Geometry", 5)}
+                                {SkillPoint("Maths", 5)}
+                                {SkillPoint("Optimisation", 3)}
+                            </div>
                             <p className={"profile-separator"}></p>
-                            <p className={"project-desc"}>Petites descriptions de la finalité du projet et de l'apprentissage</p>
+                            <p className={"project-desc"}>qsd</p>
+
+                            <button className="learn-more">
+                                    <span className="circle" aria-hidden="true">
+                                      <span className="icon arrow"></span></span>
+                                <span className="font-face-florida button-text">Learn More</span>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div className={"card"}>
+
+                        <div className={"container in-row justify-start"}>
+                            <h2 className={"font-face-florida title-name"}> Nichii </h2>
+                            <h2 className={"projet-tag"} style={{backgroundColor: "lightcoral"}}> Unity </h2>
+                            <h2 className={"projet-tag"} style={{backgroundColor: "lightsalmon"}}> Game </h2>
+                            <h2 className={"projet-tag"} style={{backgroundColor: "lightpink"}}> Personal </h2>
+                            <h2 className={"projet-tag"} style={{backgroundColor: "lightcyan"}}> Long Term </h2>
+                        </div>
+
+                        <div className={"container in-row justify-start"}>
+                            <span ref={ref} className={"project-image"}>
+                                <span className={"no-image"}> NO SIGNAL </span>
+                            </span>
+                            <p className={"profile-separator"}></p>
+                            <div className={"projet-skills in-row"}>
+                                {SkillPoint("Mobile Dev", 4)}
+                                {SkillPoint("Game Dev", 5)}
+                                {SkillPoint("Originality", 3)}
+                            </div>
+                            <p className={"profile-separator"}></p>
+                            <p className={"project-desc"}>Petites descriptions de la finalité du projet et de
+                                l'apprentissage</p>
+
+                            <button className="learn-more">
+                                    <span className="circle" aria-hidden="true">
+                                      <span className="icon arrow"></span></span>
+                                <span className="font-face-florida button-text">Learn More</span>
+                            </button>
                         </div>
 
                     </div>
